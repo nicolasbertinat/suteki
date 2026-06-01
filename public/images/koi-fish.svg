@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377.49 206.77">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#dc5d5d"/>
+      <stop offset="50%" stop-color="#dd5d5e"/>
+      <stop offset="100%" stop-color="#e2797b"/>
+    </linearGradient>
+    <linearGradient id="finGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dc5d5d"/>
+      <stop offset="100%" stop-color="#943535"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="100%" y1="0%" x2="0%" y2="50%">
+      <stop offset="0%" stop-color="#e2797b"/>
+      <stop offset="60%" stop-color="#dc5d5d"/>
+      <stop offset="100%" stop-color="#943535"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main body -->
+  <path d="M280,103 
+           Q320,85 350,95 
+           Q370,100 377,103 
+           Q370,106 350,111 
+           Q320,121 280,103 
+           Q240,75 180,70 
+           Q120,65 70,85 
+           Q40,95 25,103 
+           Q40,111 70,121 
+           Q120,141 180,136 
+           Q240,131 280,103Z" 
+        fill="url(#bodyGrad)" 
+        stroke="#943535" 
+        stroke-width="1"/>
+  
+  <!-- Belly highlight -->
+  <path d="M75,103 
+           Q100,115 150,118 
+           Q200,120 240,110 
+           Q200,125 150,125 
+           Q100,123 75,103Z" 
+        fill="#f8f0e4" 
+        opacity="0.7"/>
+  
+  <!-- Upper back detail -->
+  <path d="M100,80 
+           Q150,72 200,75 
+           Q250,78 280,90 
+           Q250,82 200,80 
+           Q150,78 100,80Z" 
+        fill="#943535" 
+        opacity="0.4"/>
+  
+  <!-- Dorsal fin -->
+  <path d="M140,70 
+           Q130,40 145,20 
+           Q155,8 170,5 
+           Q175,15 175,30 
+           Q175,50 180,70 
+           Q160,65 140,70Z" 
+        fill="url(#finGrad)" 
+        stroke="#943535" 
+        stroke-width="0.8"/>
+  
+  <!-- Dorsal fin rays -->
+  <path d="M148,60 Q150,35 158,15" stroke="#943535" stroke-width="0.6" fill="none" opacity="0.5"/>
+  <path d="M158,58 Q162,38 168,12" stroke="#943535" stroke-width="0.6" fill="none" opacity="0.5"/>
+  <path d="M168,62 Q172,45 175,25" stroke="#943535" stroke-width="0.6" fill="none" opacity="0.5"/>
+  
+  <!-- Tail fin -->
+  <path d="M350,103 
+           Q365,80 375,55 
+           Q377,45 372,35 
+           Q360,50 355,70 
+           Q352,85 350,103 
+           Q352,121 355,136 
+           Q360,156 372,171 
+           Q377,161 375,151 
+           Q365,126 350,103Z" 
+        fill="url(#tailGrad)" 
+        stroke="#943535" 
+        stroke-width="0.8"/>
+  
+  <!-- Tail fin rays -->
+  <path d="M355,75 Q365,55 370,42" stroke="#943535" stroke-width="0.5" fill="none" opacity="0.4"/>
+  <path d="M352,90 Q362,70 368,52" stroke="#943535" stroke-width="0.5" fill="none" opacity="0.4"/>
+  <path d="M355,131 Q365,151 370,164" stroke="#943535" stroke-width="0.5" fill="none" opacity="0.4"/>
+  <path d="M352,116 Q362,136 368,154" stroke="#943535" stroke-width="0.5" fill="none" opacity="0.4"/>
+  
+  <!-- Pectoral fin (upper) -->
+  <path d="M95,88 
+           Q70,65 50,50 
+           Q40,42 30,45 
+           Q35,55 45,68 
+           Q60,85 85,95Z" 
+        fill="url(#finGrad)" 
+        stroke="#943535" 
+        stroke-width="0.6"/>
+  
+  <!-- Pectoral fin rays -->
+  <path d="M85,90 Q60,70 42,52" stroke="#943535" stroke-width="0.4" fill="none" opacity="0.4"/>
+  <path d="M78,92 Q58,75 45,60" stroke="#943535" stroke-width="0.4" fill="none" opacity="0.4"/>
+  
+  <!-- Pectoral fin (lower) -->
+  <path d="M95,118 
+           Q70,141 50,156 
+           Q40,164 30,161 
+           Q35,151 45,138 
+           Q60,121 85,111Z" 
+        fill="url(#finGrad)" 
+        stroke="#943535" 
+        stroke-width="0.6"/>
+  
+  <!-- Pectoral fin rays -->
+  <path d="M85,116 Q60,136 42,154" stroke="#943535" stroke-width="0.4" fill="none" opacity="0.4"/>
+  <path d="M78,114 Q58,131 45,146" stroke="#943535" stroke-width="0.4" fill="none" opacity="0.4"/>
+  
+  <!-- Ventral fins -->
+  <path d="M200,130 
+           Q190,155 185,175 
+           Q183,185 188,190 
+           Q195,182 200,168 
+           Q205,150 210,130Z" 
+        fill="url(#finGrad)" 
+        stroke="#943535" 
+        stroke-width="0.5"/>
+  
+  <path d="M230,128 
+           Q225,150 222,168 
+           Q220,178 225,182 
+           Q232,175 235,160 
+           Q238,145 240,128Z" 
+        fill="url(#finGrad)" 
+        stroke="#943535" 
+        stroke-width="0.5"/>
+  
+  <!-- Scale pattern -->
+  <g fill="none" stroke="#943535" stroke-width="0.4" opacity="0.35">
+    <!-- Row 1 -->
+    <path d="M100,95 Q110,90 120,95"/>
+    <path d="M120,95 Q130,90 140,95"/>
+    <path d="M140,95 Q150,90 160,95"/>
+    <path d="M160,95 Q170,90 180,95"/>
+    <path d="M180,95 Q190,90 200,95"/>
+    <path d="M200,95 Q210,90 220,95"/>
+    <path d="M220,95 Q230,90 240,95"/>
+    <path d="M240,95 Q250,90 260,95"/>
+    <path d="M260,95 Q270,90 280,95"/>
+    <path d="M280,95 Q290,90 300,95"/>
+    <path d="M300,95 Q310,92 320,98"/>
+    <!-- Row 2 -->
+    <path d="M90,103 Q100,98 110,103"/>
+    <path d="M110,103 Q120,98 130,103"/>
+    <path d="M130,103 Q140,98 150,103"/>
+    <path d="M150,103 Q160,98 170,103"/>
+    <path d="M170,103 Q180,98 190,103"/>
+    <path d="M190,103 Q200,98 210,103"/>
+    <path d="M210,103 Q220,98 230,103"/>
+    <path d="M230,103 Q240,98 250,103"/>
+    <path d="M250,103 Q260,98 270,103"/>
+    <path d="M270,103 Q280,98 290,103"/>
+    <path d="M290,103 Q300,98 310,103"/>
+    <path d="M310,103 Q320,100 330,103"/>
+    <!-- Row 3 -->
+    <path d="M100,111 Q110,106 120,111"/>
+    <path d="M120,111 Q130,106 140,111"/>
+    <path d="M140,111 Q150,106 160,111"/>
+    <path d="M160,111 Q170,106 180,111"/>
+    <path d="M180,111 Q190,106 200,111"/>
+    <path d="M200,111 Q210,106 220,111"/>
+    <path d="M220,111 Q230,106 240,111"/>
+    <path d="M240,111 Q250,106 260,111"/>
+    <path d="M260,111 Q270,106 280,111"/>
+    <path d="M280,111 Q290,106 300,111"/>
+    <path d="M300,111 Q310,108 320,111"/>
+  </g>
+  
+  <!-- Decorative spots -->
+  <ellipse cx="130" cy="90" rx="12" ry="8" fill="#943535" opacity="0.6"/>
+  <ellipse cx="180" cy="85" rx="15" ry="10" fill="#943535" opacity="0.5"/>
+  <ellipse cx="235" cy="88" rx="10" ry="7" fill="#943535" opacity="0.55"/>
+  <ellipse cx="290" cy="95" rx="8" ry="5" fill="#943535" opacity="0.45"/>
+  
+  <!-- Eye -->
+  <circle cx="52" cy="100" r="8" fill="#f8f0e4"/>
+  <circle cx="52" cy="100" r="6" fill="#943535"/>
+  <circle cx="50" cy="98" r="2" fill="#f8f0e4" opacity="0.8"/>
+  
+  <!-- Mouth -->
+  <path d="M25,103 Q20,103 18,105 Q20,107 25,107" 
+        fill="none" 
+        stroke="#943535" 
+        stroke-width="1.2" 
+        stroke-linecap="round"/>
+  
+  <!-- Whiskers (barbels) -->
+  <path d="M22,100 Q10,95 5,90" stroke="#943535" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M22,106 Q10,111 5,116" stroke="#943535" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Gill line -->
+  <path d="M70,88 Q65,100 70,115" 
+        fill="none" 
+        stroke="#943535" 
+        stroke-width="1" 
+        opacity="0.5"/>
+  
+  <!-- Highlight on head -->
+  <ellipse cx="55" cy="90" rx="10" ry="5" fill="#f8f0e4" opacity="0.3"/>
+</svg>

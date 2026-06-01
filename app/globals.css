@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Cubano';
+  src: url('/fonts/cubano-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* 
+  Paleta Suteki oficial:
+  --suteki-red:        #DC5D5D  (rojo coral principal)
+  --suteki-red-dark:   #943535  (rojo oscuro)
+  --suteki-red-light:  #E37A7B  (rojo claro/rosado)
+  --suteki-cream:      #F6EFE4  (crema/fondo claro)
+  --suteki-charcoal:   #3C3C3B  (carbon/fondo oscuro)
+  --suteki-sage:       #B0AF9F  (verde salvia neutro)
+  --suteki-teal:       #93C2BC  (verde agua acento)
+*/
+
+/* Light mode */
+:root {
+  --background: #F6EFE4;
+  --foreground: #3C3C3B;
+  --card: #FDFAF5;
+  --card-foreground: #3C3C3B;
+  --popover: #FDFAF5;
+  --popover-foreground: #3C3C3B;
+  --primary: #DC5D5D;
+  --primary-foreground: #F6EFE4;
+  --secondary: #B0AF9F;
+  --secondary-foreground: #3C3C3B;
+  --muted: #EDE7DB;
+  --muted-foreground: #6B6B6A;
+  --accent: #93C2BC;
+  --accent-foreground: #3C3C3B;
+  --destructive: #943535;
+  --destructive-foreground: #F6EFE4;
+  --border: #D9D2C7;
+  --input: #EDE7DB;
+  --ring: #DC5D5D;
+  --chart-1: #DC5D5D;
+  --chart-2: #93C2BC;
+  --chart-3: #B0AF9F;
+  --chart-4: #943535;
+  --chart-5: #E37A7B;
+  --radius: 0.25rem;
+  --sidebar: #EDE7DB;
+  --sidebar-foreground: #3C3C3B;
+  --sidebar-primary: #DC5D5D;
+  --sidebar-primary-foreground: #F6EFE4;
+  --sidebar-accent: #B0AF9F;
+  --sidebar-accent-foreground: #3C3C3B;
+  --sidebar-border: #D9D2C7;
+  --sidebar-ring: #DC5D5D;
+}
+
+/* Dark mode */
+.dark {
+  --background: #1a1a19;
+  --foreground: #F6EFE4;
+  --card: #252524;
+  --card-foreground: #F6EFE4;
+  --popover: #252524;
+  --popover-foreground: #F6EFE4;
+  --primary: #DC5D5D;
+  --primary-foreground: #F6EFE4;
+  --secondary: #3C3C3B;
+  --secondary-foreground: #F6EFE4;
+  --muted: #2e2e2d;
+  --muted-foreground: #B0AF9F;
+  --accent: #93C2BC;
+  --accent-foreground: #3C3C3B;
+  --destructive: #943535;
+  --destructive-foreground: #F6EFE4;
+  --border: #3C3C3B;
+  --input: #2e2e2d;
+  --ring: #DC5D5D;
+  --sidebar: #252524;
+  --sidebar-foreground: #F6EFE4;
+  --sidebar-primary: #DC5D5D;
+  --sidebar-primary-foreground: #F6EFE4;
+  --sidebar-accent: #3C3C3B;
+  --sidebar-accent-foreground: #F6EFE4;
+  --sidebar-border: #3C3C3B;
+  --sidebar-ring: #DC5D5D;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter, 'Inter'), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: var(--font-cormorant-garamond, 'Cormorant Garamond'), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  /* Suteki brand colors - direct access */
+  --color-suteki-red: #DC5D5D;
+  --color-suteki-red-dark: #943535;
+  --color-suteki-red-light: #E37A7B;
+  --color-suteki-cream: #F6EFE4;
+  --color-suteki-charcoal: #3C3C3B;
+  --color-suteki-sage: #B0AF9F;
+  --color-suteki-teal: #93C2BC;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
