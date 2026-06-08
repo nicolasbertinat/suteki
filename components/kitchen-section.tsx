@@ -7,7 +7,7 @@ export function KitchenSection() {
   return (
     <section id="cocina" className="relative overflow-hidden bg-[#F6EFE4] py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+        <div className="grid gap-12 lg:grid-cols-h2 lg:gap-20 items-center">
           {/* Left content */}
           <div className="flex flex-col gap-6">
             {/* Title in Cubano */}
@@ -68,7 +68,7 @@ export function KitchenSection() {
           {/* Right image */}
           <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden rounded-lg">
             <Image
-              src="/images/nuestra-cocina.jpg"
+              src="/images/SUTEKI_EDITADASALTA-102.jpg"
               alt="Nuestra Cocina - Manos sosteniendo sushi"
               fill
               className="object-cover"
