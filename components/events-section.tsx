@@ -3,7 +3,7 @@
 import { useState, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronLeft, ChevronRight, Ship, Users, Flame } from "lucide-react"
+import { ChevronLeft, ChevronRight, Ship, Users } from "lucide-react"
 
 const experiences = [
   {
@@ -13,14 +13,6 @@ const experiences = [
     description: "Combinación de Sushi y Cocina Nikkei (rolls, ceviches, platos nikkei, cocina peruana). Modalidad presencial con sushi man en el lugar. Ideal para eventos privados.",
     image: "/images/event-catering.jpg",
     icon: Users,
-  },
-  {
-    id: "experiencia-360",
-    title: "Experiencia 360",
-    subtitle: "Cocina en Vivo",
-    description: "Una nueva propuesta integral de cocina asiática. Parrilla Japonesa fusión con platos realizados al carbón. Modalidad presencial con cocinero en el lugar. Ideal para eventos privados.",
-    image: "/images/event-360.jpg",
-    icon: Flame,
   },
   {
     id: "barcos-canoas",
