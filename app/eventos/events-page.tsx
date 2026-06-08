@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Ship, Users, Flame, Send } from "lucide-react"
+import { ArrowLeft, Ship, Users, Send } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
@@ -16,15 +16,6 @@ const experiences = [
     features: ["Sushi man en vivo", "Variedad de rolls y ceviches", "Cocina Nikkei completa", "Ideal para 20+ personas"],
     image: "/images/event-catering.jpg",
     icon: Users,
-  },
-  {
-    id: "experiencia-360",
-    title: "Experiencia 360",
-    subtitle: "Cocina en Vivo",
-    description: "Una nueva propuesta integral de cocina asiática. Parrilla Japonesa fusión con platos realizados al carbón. Modalidad presencial con cocinero en el lugar. Ideal para eventos privados.",
-    features: ["Parrilla Japonesa en vivo", "Platos al carbón", "Show cooking", "Experiencia inmersiva"],
-    image: "/images/event-360.jpg",
-    icon: Flame,
   },
   {
     id: "barcos-canoas",
