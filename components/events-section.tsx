@@ -42,6 +42,17 @@ export function EventsSection() {
 
   return (
     <section id="eventos" className="relative overflow-hidden py-16 lg:py-24" style={{ backgroundColor: "#F6EFE4" }}>
+      {/* Trama aletas crema como textura de fondo */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: `url("/images/trama-aletas.jpg")`,
+          backgroundSize: "600px 750px",
+          backgroundRepeat: "repeat",
+          opacity: 0.15,
+          mixBlendMode: "multiply",
+        }}
+      />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
