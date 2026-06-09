@@ -4,59 +4,59 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-serif',
-  display: 'swap',
-  preload: true,
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700'],
+    variable: '--font-serif',
+    display: 'swap',
+    preload: true,
 })
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
-  preload: true,
+    subsets: ['latin'],
+    variable: '--font-sans',
+    display: 'swap',
+    preload: true,
 })
 
 export const metadata: Metadata = {
-  title: 'Suteki - Cocina Nikkei',
-  description: 'Suteki busca transmitir en cada pieza lo mas importante para nosotros: Disfrutar de una buena comida entre amigos y familia.',
+    title: 'Suteki - Cocina Nikkei',
+    description: 'Suteki busca transmitir en cada pieza lo mas importante para nosotros: Disfrutar de una buena comida entre amigos y familia.',
 }
 
 export const viewport: Viewport = {
-  themeColor: '#D94F4F',
+    themeColor: '#D94F4F',
 }
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode
+    children: React.ReactNode
 }>) {
-  return (
-    <html lang="es" className={`${cormorant.variable} ${inter.variable}`} suppressHydrationWarning>
-      <head>
-        {/* Preconnect to Google Fonts for faster loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Preload Cubano local font */}
-        <link
-          rel="preload"
-          href="/fonts/cubano-regular.otf"
-          as="font"
-          type="font/otf"
-          crossOrigin="anonymous"
-        />
-        {/* Blocking script: apply theme class before first paint to avoid flash - default to dark */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('suteki-theme');if(t!=='light'){document.documentElement.classList.add('dark')}}catch(e){document.documentElement.classList.add('dark')}})()`,
-          }}
-        />
-      </head>
-      <body className="font-sans antialiased bg-background text-foreground">
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  )
-}
+    return (
+          <html lang="es" className={`${cormorant.variable} ${inter.variable}`} suppressHydrationWarning>
+                <head>
+                  {/* Preconnect to Google Fonts for faster loading */}
+                        <link rel="preconnect" href="https://fonts.googleapis.com" />
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                  {/* Preload Cubano local font */}
+                        <link
+                                    rel="preload"
+                                    href="/fonts/cubano-regular.otf"
+                                    as="font"
+                                    type="font/otf"
+                                    crossOrigin="anonymous"
+                                  />
+                  {/* Theme script: respect user preference, default to light */}
+                        <script
+                                    dangerouslySetInnerHTML={{
+                                                  __html: `(function(){try{var t=localStorage.getItem('suteki-theme');if(t==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+                                    }}
+                                  />
+                </head>head>
+                <body className="font-sans antialiased bg-background text-foreground">
+                  {children}
+                        <Analytics />
+                </body>body>
+          </html>html>
+        )
+}</html>
