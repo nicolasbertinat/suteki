@@ -50,10 +50,10 @@ export function LocationsSection() {
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage: `url("/images/pattern-bg.png")`,
+          backgroundImage: `url("/images/trama-aletas-verde.jpg")`,
           backgroundRepeat: "repeat",
-          backgroundSize: "800px",
-          opacity: 0.35,
+          backgroundSize: "600px 750px",
+          opacity: 0.25,
           mixBlendMode: "overlay",
         }}
       />
