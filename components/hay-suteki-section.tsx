@@ -40,13 +40,12 @@ export function HaySutekiSection() {
         <div className="flex items-center justify-center gap-2 md:gap-6 my-0">
           <div style={{ width: "clamp(100px, 18vw, 200px)", flexShrink: 0 }}>
             <Image
-              src="/images/hay-suteki-mobile.png"
+              src="/images/koi-fish.svg"
               alt=""
               aria-hidden="true"
               width={200}
               height={200}
-              className="w-full h-auto object-contain"
-              style={{ objectPosition: "center 15%" }}
+              className="w-full h-auto"
             />
           </div>
           <p
